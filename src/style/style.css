@@ -1,0 +1,47 @@
+/* Centers the content and adds padding */
+.heading {
+  text-align: center;      /* Centers the text horizontally */
+  margin: 40px 0 20px 0;   /* Space above and below the heading */
+  font-family: sans-serif;
+  color: #222;             /* Dark grey, softer than pure black */
+  font-size: 2rem;         /* Large and readable */
+  position: relative;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;       /* Allows cards to wrap to the next line */
+  gap: 20px;             /* Space between cards */
+  padding: 20px;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+/* Individual Card Styling */
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 1.5rem;
+  width: 250px;          /* Fixed width for uniformity */
+  border: 1px solid #eee;
+  transition: transform 0.2s ease; /* Animation for hover */
+}
+
+/* Hover effect to make it interactive */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.card h4 {
+  margin: 0;
+  color: #666;
+  font-weight: 400;
+  font-size: 0.9rem;
+}

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "../style/style.css";
 
 function Userlist() {
     // need something to store the data
@@ -26,7 +27,7 @@ function Userlist() {
 
             }
         }
-        fetchData();
+        fetchUsers();
        }   , [])
 
        return (
@@ -43,7 +44,7 @@ function Userlist() {
                 </div>
                 );
             })}
-            
+
         </div>
         </>
 )   

@@ -29,6 +29,25 @@ function Userlist() {
         fetchData();
        }   , [])
 
+       return (
+        <>
+        <h2 className="heading">Users</h2>
+        <div className="container">
+        
+            {users.map((user) => {
+
+                return (
+                <div id ={user.id} className="card"> 
+                    <h3>{user.name}</h3>
+                    <h4>{user.email}</h4>
+                </div>
+                );
+            })}
+            
+        </div>
+        </>
+)   
+
 
 }
 export default Userlist;

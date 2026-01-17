@@ -26,7 +26,7 @@ return (
     <>
         <h2 className="heading">Posts</h2>  
         <div className="container">
-            {posts.map((post) => {
+            {posts.filter(post => post.userId === 1).map((post) => {
                 return (
                     <div id={post.id} className="card">
                         <h3>{post.title}</h3>
